@@ -5621,7 +5621,7 @@ async function analyse(){
 					var r1=pluses
 					if(surpuissance==3){r1=[]
 					for(var ar of archiRumble[1]){for(var pl of pluses){r1.push([pl[0],ar[1],ar[2],ar[3],ar[4],ar[5],ar[6]])}}}
-		if(ENNEMY_REVERSED){[rota1,rota2] = [rota2,rota1]}
+		if(ENNEMY_REVERSED){[r1,rota2] = [rota2,r1]}
 					simulFights({
 						fn:afficheur,
 						rota1:r1,
