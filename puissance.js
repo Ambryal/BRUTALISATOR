@@ -5531,7 +5531,7 @@ res.tx=div({0:btn,26:1,17:"..."})
 		}
 	else{for(var b of rumble){if(!surpuissance || (surpuissance==1 && rota2.length<200) || (surpuissance==2 && rota2.length<42)){rota2.push([b])}}}
 	
-	if(ENNEMY) rota2=[[await getBrute(ENNEMY)]]
+	if(ENNEMY) {rota2=[[await getBrute(ENNEMY)]];if(ENNEMY_REVERSED){cl("reversed");[rota1,rota2] = [rota2,rota1]}}
 	
 				simulFights({
 					fn:function(res,ended){//cl(res);

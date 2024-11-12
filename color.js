@@ -691,7 +691,7 @@ var PUISSANCE
 var POWERSTEP
 var archiRumble
 var ENNEMY
-
+var ENNEMY_REVERSED
 
 	
 
@@ -1212,6 +1212,8 @@ if(typeof(document)!="undefined"){
 
 var urlennemy=window.location.href.split("?")
 if(urlennemy.length>1){urlennemy=urlennemy[1];if(urlennemy.includes("puissance=")){ENNEMY = urlennemy.split("puissance=")[1].split("&")[0]}}
+var urlennemy_reversed=window.location.href.split("?")
+if(urlennemy_reversed.length>1){urlennemy_reversed=urlennemy_reversed[1];if(urlennemy_reversed.includes("puissance_reversed=")){ENNEMY_REVERSED = urlennemy_reversed.split("puissance_reversed=")[1].split("&")[0]}}
 
 LOCAL = window.location.href.startsWith("file:")
 	
