@@ -5515,7 +5515,7 @@ res.tx=div({0:btn,26:1,17:"..."})
 	var puissance = makeInfoDiv()
 		var flag=true
 		var elements = $("h3").filter(function() {
-    if( flag && $(this).text().startsWith("Niveau")){flag=false;$(this).parent().append(puissance.div)};
+    if( flag && $(this).text().includes("Niveau")){flag=false;$(this).parent().append(puissance.div)};
 });
 	if(flag)return setTimeout(power,100)
 	var rota2 = []
